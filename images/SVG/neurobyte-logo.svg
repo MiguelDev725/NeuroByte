@@ -1,0 +1,18 @@
+<svg width="300" height="100" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
+  <!-- Nodo neuronal -->
+  <circle cx="40" cy="80" r="10" fill="#10B981"></circle>
+  <circle cx="70" cy="50" r="8" fill="#2563EB"></circle>
+  <circle cx="70" cy="110" r="8" fill="#2563EB"></circle>
+  <line x1="40" y1="80" x2="70" y2="50" stroke="#2563EB" stroke-width="4" stroke-linecap="round"></line>
+  <line x1="40" y1="80" x2="70" y2="110" stroke="#2563EB" stroke-width="4" stroke-linecap="round"></line>
+
+  <!-- Texto "Neuro" -->
+  <text x="100" y="95" font-family="Poppins, sans-serif" font-size="48" fill="#1E293B" font-weight="600">
+    Neuro
+  </text>
+
+  <!-- Texto "Byte" en color acento -->
+  <text x="270" y="95" font-family="Poppins, sans-serif" font-size="48" fill="#10B981" font-weight="700">
+    Byte
+  </text>
+</svg>
