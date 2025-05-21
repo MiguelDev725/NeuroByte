@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto | NeuroByte</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon/neuroByteFavicon.png"
+    />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -30,22 +35,21 @@
     <!-- FORMULARIO -->
     <main class="seccion">
       <div class="container">
-        <h1>Contáctanos</h1>
+        <h1>Hablemos de tu proyecto</h1>
         <p>
-          Completa el siguiente formulario y nos pondremos en contacto contigo
-          en menos de 24 horas.
+          Agenda tu diagnóstico gratuito. Cuéntanos tu idea y te diremos cómo
+          hacerla realidad en menos de 48 horas.
         </p>
 
         <form
-          action="https://formsubmit.co/acebedo2524@gmail.com"
+          action="https://formsubmit.co/neurobytepages@gmail.com"
           method="POST"
           class="formulario-contacto"
         >
-          <!-- Cambia tu-correo@neurobyte.com por tu email real -->
           <input
             type="hidden"
             name="_subject"
-            value="Nuevo mensaje desde el sitio web"
+            value="Nuevo mensaje desde el sitio web NeuroByte"
           />
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_captcha" value="false" />
@@ -59,10 +63,34 @@
           <label for="telefono">Teléfono de contacto</label>
           <input type="tel" id="telefono" name="telefono" />
 
-          <label for="mensaje">¿En qué podemos ayudarte? *</label>
-          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          <label for="interes">¿Qué tipo de solución te interesa?</label>
+          <select id="interes" name="interes" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="Landing Page">
+              Landing Page para captar clientes
+            </option>
+            <option value="Catálogo web">
+              Catálogo digital para mostrar productos
+            </option>
+            <option value="Formulario Automatizado">
+              Formulario con WhatsApp o Email
+            </option>
+            <option value="Agenda Digital">Agenda de reservas o citas</option>
+            <option value="Otro">Otro / No estoy seguro</option>
+          </select>
 
-          <button type="submit" class="boton grande">Enviar mensaje</button>
+          <label for="mensaje">Describe tu necesidad o idea *</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="5"
+            required
+            placeholder="Ej: Tengo una tienda de ropa y quiero vender más en línea..."
+          ></textarea>
+
+          <button type="submit" class="boton grande">
+            Quiero mi propuesta gratuita
+          </button>
         </form>
       </div>
     </main>
